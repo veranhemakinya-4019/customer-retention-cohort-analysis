@@ -1,11 +1,5 @@
-Perfect 👏
-Below is your final, polished, recruiter-ready README.md — clean structure, strong positioning, optimized for GitHub, and ready to paste directly into VS Code.
-
-✅ COPY EVERYTHING BELOW INTO README.md
 # 📊 Customer Retention Cohort Analysis  
 ### End-to-End Analytics Project | SQL • Python • Power BI
-
----
 
 ## 🚀 Project Summary
 
