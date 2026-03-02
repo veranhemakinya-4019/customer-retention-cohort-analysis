@@ -13,7 +13,7 @@ This project analyzes customer retention behavior using cohort analysis to uncov
 - Monthly acquisition trends  
 - Executive-level retention KPIs  
 
-The goal was to simulate a real-world analytics workflow — transforming raw transactional data into strategic business insights.
+The goal was to simulate a real-world analytics workflow, transforming raw transactional data into strategic business insights.
 
 ---
 
@@ -99,6 +99,7 @@ OVER (PARTITION BY customer_id)
 Final output:
 
 cohort_retention.csv
+
 📈 Step 3 — Retention Curve Analysis (Python)
 
 Generated retention decay visualizations to analyze:
@@ -147,6 +148,11 @@ Cohort-based conditional formatting
 
 Interactive filters
 
+### 📊 Dashboard Preview
+
+![Customer Retention Dashboard](powerbi/customer_retention_dashboard.png)
+
+
 🔍 Key Insights
 
 Month 1 retention ≈ 68%
@@ -193,6 +199,13 @@ Data storytelling for executive audiences
 
 End-to-end analytics workflow execution
 
+## ▶ How to Reproduce This Project
+
+1. Run Python data cleaning notebook  
+2. Execute SQL cohort query in PostgreSQL  
+3. Export cohort_retention.csv  
+4. Open Power BI file and connect to dataset  
+
 🧩 What This Project Proves
 
 ✔ Ability to transform raw data into business insights
@@ -205,10 +218,10 @@ End-to-end analytics workflow execution
 
 If you're hiring for:
 
-Data Analyst
+- Data Analyst  
+- Business Intelligence Analyst  
+- Product Analyst  
 
-Business Intelligence Analyst
+I would be happy to connect and discuss how I can contribute to data-driven decision making and business growth.
 
-Product Analyst
-
-I would be happy to connect and discuss how I can contribute.
+Let’s build insights that matter.
