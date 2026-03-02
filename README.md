@@ -1,6 +1,8 @@
 # 📊 Customer Retention Cohort Analysis  
 ### End-to-End Analytics Project | SQL • Python • Power BI
 
+---
+
 ## 🚀 Project Summary
 
 This project analyzes customer retention behavior using cohort analysis to uncover:
@@ -97,10 +99,7 @@ OVER (PARTITION BY customer_id)
 Final output:
 
 cohort_retention.csv
-
----
-
-## 📈 Step 3 — Retention Curve Analysis (Python)
+📈 Step 3 — Retention Curve Analysis (Python)
 
 Generated retention decay visualizations to analyze:
 
@@ -110,16 +109,15 @@ Retention stabilization trends
 
 Cross-cohort performance
 
-Key Pattern Observed:
+Key Pattern Observed
 
 Retention drops sharply after Month 1
+
 Stabilization occurs around Month 4
 
 This suggests churn is heavily concentrated in the first 90 days.
 
----
-
-## 📊 Step 4 — Executive Dashboard (Power BI)
+📊 Step 4 — Executive Dashboard (Power BI)
 
 Developed an interactive dashboard featuring:
 
@@ -149,9 +147,7 @@ Cohort-based conditional formatting
 
 Interactive filters
 
----
-
-## 🔍 Key Insights
+🔍 Key Insights
 
 Month 1 retention ≈ 68%
 
@@ -161,15 +157,11 @@ Most churn occurs early in the lifecycle
 
 Later cohorts show improving long-term retention
 
----
-
-## 📌 Business Implication
+📌 Business Implication
 
 Retention strategy should focus on early lifecycle engagement (first 90 days) to reduce churn and improve customer lifetime value.
 
----
-
-## 📂 Repository Structure
+📂 Repository Structure
 customer-retention-cohort-analysis/
 │
 ├── data/
@@ -187,10 +179,7 @@ customer-retention-cohort-analysis/
 │   └── customer_retention_dashboard.png
 │
 └── README.md
-
----
-
-## 💡 Strategic Value of This Project
+💡 Strategic Value of This Project
 
 This project demonstrates:
 
@@ -204,9 +193,7 @@ Data storytelling for executive audiences
 
 End-to-end analytics workflow execution
 
----
-
-## 🧩 What This Project Proves
+🧩 What This Project Proves
 
 ✔ Ability to transform raw data into business insights
 ✔ Strong understanding of customer lifecycle analytics
@@ -214,9 +201,7 @@ End-to-end analytics workflow execution
 ✔ Behavioral trend visualization in Python
 ✔ Executive-level dashboard presentation
 
----
-
-## 📬 Connect With Me
+📬 Connect With Me
 
 If you're hiring for:
 
