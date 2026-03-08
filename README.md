@@ -1,49 +1,32 @@
-# 📊 Customer Retention Cohort Analysis  
-### End-to-End Analytics Project | SQL • Python • Power BI
+# 📊 Customer Retention Cohort Analysis
+**End-to-End Data Analytics Project | SQL • Python • Power BI**
 
 ---
 
-## 🚀 Project Summary
+## 🚀 Project Overview
 
-This project analyzes customer retention behavior using cohort analysis to uncover:
+This project analyzes **customer retention using cohort analysis** to understand how long customers stay active and when churn occurs.
 
-- Retention decay patterns  
-- Early-stage churn behavior  
-- Long-term cohort performance  
-- Monthly acquisition trends  
-- Executive-level retention KPIs  
-
-The goal was to simulate a real-world analytics workflow, transforming raw transactional data into strategic business insights.
-
----
-
-## 🎯 Business Problem
-
-Many companies focus heavily on customer acquisition but lack visibility into:
-
-- How long customers actually stay  
-- When churn accelerates  
-- Which acquisition cohorts perform best  
-- Whether retention is improving over time  
-
-This project answers a critical business question:
+The analysis helps answer an important business question:
 
 > **Are we retaining customers — or simply replacing the ones who leave?**
 
+The workflow simulates a real-world analytics pipeline from **raw transactional data to an executive dashboard**.
+
 ---
 
-## 🏗 End-to-End Architecture
+## 🏗 Project Workflow
 
 
 Raw Excel Transaction Data
 ↓
 Python Data Cleaning (Pandas)
 ↓
-PostgreSQL Cohort Retention Model
+PostgreSQL Cohort Modeling
 ↓
-Retention Table Export (CSV)
+Retention Dataset Export (CSV)
 ↓
-Python Retention Curve Analysis
+Python Retention Analysis
 ↓
 Power BI Executive Dashboard
 
@@ -60,17 +43,17 @@ Power BI Executive Dashboard
 
 ---
 
-## 🧠 Step 1 — Data Cleaning (Python)
+## 🧠 Key Steps
 
-Performed structured preprocessing:
+### Data Preparation (Python)
 
-- Removed null Customer IDs  
-- Removed negative quantities  
-- Converted invoice dates to datetime format  
-- Created `cohort_month`  
-- Created `cohort_index` (months since first purchase)  
+- Removed null `CustomerID`
+- Filtered negative quantities
+- Converted invoice dates to datetime
+- Created `cohort_month`
+- Created `cohort_index` (months since first purchase)
 
-**Output file:**
+**Output dataset**
 
 
 data/cleaned/retail_cleaned.csv
@@ -78,97 +61,35 @@ data/cleaned/retail_cleaned.csv
 
 ---
 
-## 🗄 Step 2 — Cohort Modeling (SQL)
+### Cohort Modeling (SQL)
 
-Built a cohort retention table using PostgreSQL window functions.
-
-Calculated:
-
-- Cohort Month  
-- Cohort Index  
-- Active Customers  
-- Total Customers per Cohort  
-- Retention Percentage  
-
-Core SQL logic:
+Customer cohorts were generated using PostgreSQL window functions.
 
 ```sql
-DATE_TRUNC('month', MIN(invoice_date)) 
+DATE_TRUNC('month', MIN(invoice_date))
 OVER (PARTITION BY customer_id)
 
-Final output:
+This produced the final dataset:
 
 cohort_retention.csv
-
-📈 Step 3 — Retention Curve Analysis (Python)
-
-Generated retention decay visualizations to analyze:
-
-Early churn behavior
-
-Retention stabilization trends
-
-Cross-cohort performance
-
-Key Pattern Observed
-
-Retention drops sharply after Month 1
-
-Stabilization occurs around Month 4
-
-This suggests churn is heavily concentrated in the first 90 days.
-
-📊 Step 4 — Executive Dashboard (Power BI)
-
-Developed an interactive dashboard featuring:
-
-🔹 KPI Layer
-
-Total Customers
-
-Month 1 Retention %
-
-Overall Weighted Retention %
-
-🔹 Analytical Layer
-
-Retention Decay Curve
-
-Monthly Customer Acquisition Trend
-
-Cohort Heatmap (Retention %)
-
-🔹 Dashboard Features
-
-Clean executive layout
-
-Weighted retention calculations (no inflated metrics)
-
-Cohort-based conditional formatting
-
-Interactive filters
-
-### 📊 Dashboard Preview
-
-![Customer Retention Dashboard](powerbi/customer_retention_dashboard.png)
-
+📊 Dashboard Preview
 
 🔍 Key Insights
 
-Month 1 retention ≈ 68%
+Month 1 retention: ~68%
 
 Retention falls below 30% by Month 4
 
-Most churn occurs early in the lifecycle
+Most churn occurs within the first 90 days
 
-Later cohorts show improving long-term retention
+Later cohorts show improved long-term retention
 
-📌 Business Implication
+📌 Business Insight
 
-Retention strategy should focus on early lifecycle engagement (first 90 days) to reduce churn and improve customer lifetime value.
+Customer retention strategies should focus on early lifecycle engagement (first 90 days) to reduce churn and improve customer lifetime value (CLV).
 
 📂 Repository Structure
-customer-retention-cohort-analysis/
+customer-retention-cohort-analysis
 │
 ├── data/
 │   ├── raw/
@@ -185,43 +106,29 @@ customer-retention-cohort-analysis/
 │   └── customer_retention_dashboard.png
 │
 └── README.md
-💡 Strategic Value of This Project
+💡 Skills Demonstrated
 
-This project demonstrates:
+Cohort analysis
 
-SQL window function expertise
+SQL window functions
 
-Cohort-based behavioral analytics
+Data cleaning with Python
 
-Proper weighted KPI design
+Customer lifecycle analytics
 
-Data storytelling for executive audiences
+Executive dashboard design
 
-End-to-end analytics workflow execution
+📬 Connect
 
-## ▶ How to Reproduce This Project
+Open to opportunities in:
 
-1. Run Python data cleaning notebook  
-2. Execute SQL cohort query in PostgreSQL  
-3. Export cohort_retention.csv  
-4. Open Power BI file and connect to dataset  
+Data Analyst
 
-🧩 What This Project Proves
+Business Intelligence Analyst
 
-✔ Ability to transform raw data into business insights
-✔ Strong understanding of customer lifecycle analytics
-✔ Retention KPI engineering in SQL & Power BI
-✔ Behavioral trend visualization in Python
-✔ Executive-level dashboard presentation
+Product Analyst
 
-📬 Connect With Me
+Let's build insights that drive better decisions.
 
-If you're hiring for:
 
-- Data Analyst  
-- Business Intelligence Analyst  
-- Product Analyst  
-
-I would be happy to connect and discuss how I can contribute to data-driven decision making and business growth.
-
-Let’s build insights that matter.
+---
