@@ -72,7 +72,6 @@ OVER (PARTITION BY customer_id)
 This produced the final dataset:
 
 cohort_retention.csv
-📊 Dashboard Preview
 
 🔍 Key Insights
 
@@ -84,11 +83,11 @@ Most churn occurs within the first 90 days
 
 Later cohorts show improved long-term retention
 
-📌 Business Insight
+Business Insight
 
 Customer retention strategies should focus on early lifecycle engagement (first 90 days) to reduce churn and improve customer lifetime value (CLV).
 
-📂 Repository Structure
+Repository Structure
 customer-retention-cohort-analysis
 │
 ├── data/
@@ -129,6 +128,3 @@ Business Intelligence Analyst
 Product Analyst
 
 Let's build insights that drive better decisions.
-
-
----
